@@ -7,7 +7,7 @@
 %define	pdir	Getopt
 %define	pnam	Euclid
 Summary:	Getopt::Euclid - Executable Uniform Command-Line Interface Descriptions
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Getopt::Euclid - ujednolicone opisy interfejsu linii poleceń
 Name:		perl-Getopt-Euclid
 Version:	0.1.0
 Release:	1
@@ -20,28 +20,20 @@ URL:		http://search.cpan.org/dist/Getopt-Euclid/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
-BuildRequires:	perl(version)
+BuildRequires:	perl-version
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt::Euclid uses your program's own documentation to create a command-line
-argument parser. This ensures that your program's documented interface and
-its actual interface always agree.
+Getopt::Euclid uses your program's own documentation to create a
+command-line argument parser. This ensures that your program's
+documented interface and its actual interface always agree.
 
-To use the module, you simply write:
-
-    use Getopt::Euclid;
-
-at the top of your program.
-
-When the module is loaded within a regular Perl program, it will:
-
-
-
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Getopt::Euclid wykorzystuje dokumentację programu do utworzenia
+analizatora argumentów linii poleceń. Daje to pewność, że
+udokumentowany i faktyczny interfejs programu będą się zawsze zgadzać.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-v%{version}
