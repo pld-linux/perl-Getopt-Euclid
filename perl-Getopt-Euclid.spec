@@ -9,7 +9,7 @@ Summary:	Getopt::Euclid - Executable Uniform Command-Line Interface Descriptions
 Summary(pl.UTF-8):	Getopt::Euclid - ujednolicone opisy interfejsu linii poleceń
 Name:		perl-Getopt-Euclid
 Version:	0.3.2
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
